@@ -27,7 +27,10 @@ int main(){
                 push(ch);
                 break;
             case 2:
-            printf("Exiting...");
+                printf("Exiting...");
+                exit(0);
+            default: 
+                printf("Invalid choice.");
         }
     }
 }
