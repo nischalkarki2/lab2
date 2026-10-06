@@ -5,7 +5,7 @@
 int arr[Max];
 int top = -1;
 
-void push(int ch){
+void push(char ch){
     if(top == Max-1)
         printf("Stack Overflow\n");
         return -1;
@@ -14,5 +14,20 @@ void push(int ch){
 }
 
 int main(){
-    printf("Options:\n1.Push\n")
+    char ch;
+    int c;
+    while(1){
+        printf("Options:\n1.Push\n2.Exit\n");
+        scanf("%c", &ch);
+
+        switch(c){
+            case 1:
+                printf("Enter a number you want to push: ");
+                scanf("%c", &ch);
+                push(ch);
+                break;
+            case 2:
+            printf("Exiting...");
+        }
+    }
 }
